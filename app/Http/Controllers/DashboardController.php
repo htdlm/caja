@@ -27,12 +27,13 @@ class DashboardController extends Controller
             $save = Client::where('user_id', Auth::user()->id)->whereIn('estatus', [1, 3])->sum('depositado');
             $pendient = Client::where('user_id', Auth::user()->id)->where('estatus', 0)->sum('monto');
             $pagos = Client::where('user_id', Auth::user()->id)->sum('pago');
+            $depositado = Client::where('user_id', Auth::user()->id)->sum('depositado');
 
             $data = [
                 'client' => $client,
                 'done' => Client::where('user_id', Auth::user()->id)->where('estatus', 1)->count(),
                 'pendient' => Client::where('user_id', Auth::user()->id)->where('estatus', 0)->count(),
-                'total' => $save + $pendient,
+                'total' => $depositado,
                 'save' => $save,
                 'pagos' => $pagos,
                 'mount' => $pendient,

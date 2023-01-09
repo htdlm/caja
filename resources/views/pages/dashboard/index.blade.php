@@ -87,10 +87,10 @@ Mi cuenta
                                     <tr>
                                         <th scope="col">Fecha</th>
                                         <th scope="col">Estatus</th>
-                                        <th scope="col">Pagos</th>
-                                        <th scope="col">Monto</th>
-                                        <th scope="col">Credito</th>
-                                        <th scope="col">Depositado</th>
+                                        <th scope="col">Déposito</th>
+                                        <th scope="col">Pactado</th>
+                                        <th scope="col">Crédito</th>
+                                        <th scope="col">Aplicado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
