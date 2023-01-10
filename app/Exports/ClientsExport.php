@@ -18,6 +18,6 @@ class ClientsExport implements FromCollection, WithHeadings
 
     public function headings(): array
     {
-        return ["user_id", "nombre", "fecha", "monto", "depositado", "credito", "estatus", "pago"];
+        return ["user_id", "nombre", "fecha", "pactado", "aplicado", "credito", "estatus", "deposito"];
     }
 }
