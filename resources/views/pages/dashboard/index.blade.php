@@ -188,7 +188,7 @@ Mi cuenta
 
                                         </td>
                                         <td>
-                                            ${{ number_format($total + $ganancia + $bonos, 2) }}
+                                            ${{ number_format($total + $ganancia, 2) }}
                                         </td>
                                     </tr>
                                 </tbody>
