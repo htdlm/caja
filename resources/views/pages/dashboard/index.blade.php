@@ -78,6 +78,7 @@ Mi cuenta
                     </div>
                 </div>
             </div>
+
             <div class="col-sm-6 col-xl-8 col-lg-6">
                 <div class="card overflow-auto" style="max-height: 487px">
                     <div class="card-body">
@@ -213,16 +214,18 @@ Mi cuenta
     const myChart = new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Pendiente', 'Ahorrado'],
+            labels: ['Pendiente', 'Ahorrado', 'Extra'],
             datasets: [{
-                data: [{{ $mount }}, {{ $save }}],
+                data: [{{ $mount }}, {{ $save }}, {{ $extra }}],
                 backgroundColor: [
                     'rgb(255, 99, 132)',
-                    'rgb(75, 192, 192)'
+                    'rgb(75, 192, 192)',
+                    'rgb(13, 110, 253)'
                 ],
                 borderColor: [
                     'rgb(255, 99, 132)',
                     'rgb(75, 192, 192)',
+                    'rgb(13, 110, 253)'
                 ],
                 borderWidth: 1
             }]

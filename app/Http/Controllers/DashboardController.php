@@ -7,6 +7,8 @@ use App\Models\{
     Client,
 };
 
+use function Psy\debug;
+
 class DashboardController extends Controller
 {
 
@@ -28,6 +30,7 @@ class DashboardController extends Controller
             $pendient = Client::where('user_id', Auth::user()->id)->where('estatus', 0)->sum('monto');
             $pagos = Client::where('user_id', Auth::user()->id)->sum('pago');
             $depositado = Client::where('user_id', Auth::user()->id)->sum('depositado');
+            $extra = Client::where('user_id', Auth::user()->id)->whereIn('estatus', [2])->sum('monto');
 
             $data = [
                 'client' => $client,
@@ -39,6 +42,7 @@ class DashboardController extends Controller
                 'mount' => $pendient,
                 'credit' => $credit != null ? $credit->credito : 0,
                 'bonos' => Client::where('user_id', Auth::user()->id)->where('estatus', 2)->sum('depositado'),
+                'extra' => $extra,
             ];
         }
 

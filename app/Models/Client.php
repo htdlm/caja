@@ -34,6 +34,7 @@ class Client extends Model
         'fecha' => 'datetime',
         'monto' => 'float',
         'depositado' => 'float',
-        'credito' => 'float'
+        'credito' => 'float',
+        'pago' => 'float',
     ];
 }
