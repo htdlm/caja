@@ -216,7 +216,7 @@ Mi cuenta
         data: {
             labels: ['Pendiente', 'Ahorrado', 'Extra'],
             datasets: [{
-                data: [{{ $mount }}, {{ $save }}, {{ $total }}],
+                data: [{{ $mount }}, {{ $save }}, {{ $extra }}],
                 backgroundColor: [
                     'rgb(255, 99, 132)',
                     'rgb(75, 192, 192)',
