@@ -119,6 +119,9 @@ Mi cuenta
                                             @elseif ($mov->estatus == 5)
                                             <i data-feather="gift" class="text-muted"></i>
                                             <span class="ms-1">Cumpleaños</span>
+                                            @elseif ($mov->estatus == 6)
+                                            <i data-feather="dollar-sign" class="text-secondary"></i>
+                                            <span class="ms-1">Ud Deposito</span>
                                             @endif
                                         </td>
                                         <td>
