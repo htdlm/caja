@@ -121,7 +121,7 @@ Mi cuenta
                                             <span class="ms-1">Cumpleaños</span>
                                             @elseif ($mov->estatus == 6)
                                             <i data-feather="dollar-sign" class="text-secondary"></i>
-                                            <span class="ms-1">Ud Deposito</span>
+                                            <span class="ms-1">Deposito</span>
                                             @endif
                                         </td>
                                         <td>
